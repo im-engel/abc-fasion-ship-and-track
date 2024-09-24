@@ -28,7 +28,6 @@ export const fetchShipments = async (): Promise<Shipment[] | null> => {
         });
 
         const {data} = response.data
-        console.log('ENGEL', data)
         return data;
     } catch (error) {
         console.error('Error fetching shipments:', error);
